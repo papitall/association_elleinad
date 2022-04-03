@@ -1,0 +1,625 @@
+/* T E L E P H O N E */
+
+
+body {
+    font-family: Arial;
+    background-color: #707996;
+}
+
+.contenu { 
+    position: relative;  
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    min-width: 1145px;
+    box-shadow : 0px 0px 15px 2px rgba( 0, 0, 0, 0.5) ; 
+}
+
+div.entete {
+    position: relative;
+    height: 1180px;
+    background: 
+    url(entraide.png) no-repeat center,
+    url(fond_entete.jpg) no-repeat center/cover;
+    margin: auto;
+}
+
+div.entete img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+div.icon {
+    margin-top: 55px;
+    padding: 11px;
+    margin-left: 190px;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.icon a {
+    font-size: 60px;
+    color: black;
+    border: solid 1px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+}
+div.icon a:hover {
+    color: aliceblue;
+}
+
+div.ecran {
+    position: relative;
+    height: 3870px;   
+}
+
+div.cont-ecran {
+    background-color: #87a4bc;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-ecran .box {
+    width: 90%;
+    height: 880px;
+    background: #ffecce21;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 5px 11px rgba(0,0,0,.5);
+}
+
+.cont-ecran .box h2 {
+    margin-top: -40px;
+    color: #87a4bc;
+}
+
+.cont-ecran .box h3 {
+    position: relative;
+    font-size: 3em;
+    color: #00000033;
+}
+.cont-ecran .box p {
+    font-size: 46px;
+    position: relative;
+    text-align: justify;
+    color: #555;
+}
+
+div.Espace {
+    margin-left: auto;
+    margin-right: auto;
+    font: 400 1em/1.5 "Neuton"; 
+    text-align: center;
+}
+
+div.Espace p {
+    font: 700 4em/1 "Oswald", sans-serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin-top: 0;
+}
+
+div.Espace span {
+      font: 700 4em/1 "Oswald", sans-serif;
+    font-size: 50px;
+      letter-spacing: 0;
+
+    background: url(ecran-anime.gif) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: #87a4bc5a;
+    animation: aitf 80s linear infinite;
+
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+}
+
+@keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.articles {
+    position: relative;
+    width: auto;
+}
+
+.left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    width: 90%;
+}
+.right-container p {
+    font-size: 35px;
+    text-align: justify;
+}
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+}
+.titre p {
+    color: #afafaf;
+    padding-top: 2%;
+}
+.titre h2 {
+    color: #113b72a2;
+}
+
+.activites {
+    position: relative;
+    padding: 0% 5% 3%;
+    margin-top: 100px;
+}
+.activites h3 {
+    color: #113b72a2;
+    font-size: 35px;
+}
+.activites p {
+    font-size: 35px;
+    text-align: justify;
+}
+.bas-page {
+    background-color: #89a5bb;
+    height: 150px;
+}
+#shortcut {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+div.bas-page a {
+    text-decoration: none;
+    color: #555;
+    border: 1px solid;
+    padding: 2px;
+}
+div.bas-page a:hover {
+    color: aliceblue;
+}
+div.adresse p {
+    text-align: center;
+    font-size: 12px;
+}
+
+div.table_entete a {
+    text-decoration: none;
+    color: black;
+}
+/* ------------------- */
+
+div.hauteur {
+    height: 85px;
+    background: url(fond_entete.jpg) 
+    no-repeat center/cover;
+}
+.deux_entete img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.separateur {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 50%;
+    height: 1px;
+}
+.deux_entete h4 {
+    color: #87a4bc;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+}
+.article-container {
+    display: grid;
+    margin: 108px;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 1rem;
+}
+.article-image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.article-card {
+    background: #faf5ec;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.article-content {
+    padding: 1rem;
+}
+.article-content .card-category {
+    font-size: 500%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b89a7;
+    display: block;
+    text-decoration: none;
+}
+.article-content .card-title {
+    margin: 1rem 0;
+    font-size: 300%;
+    color: #22447b;
+}
+.article-content .card-excerpt {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #6b82a7;
+    margin: 0;
+}
+.developpement p {
+    margin: 25px;
+    text-align: justify;
+    font-size: 38px;
+}
+.developpement { 
+    border: solid 1px; 
+    border-radius: 15px; 
+    margin: 15px; 
+    color: #6b89a7;
+}
+.container-contact h2 {
+    text-align: center;
+    color: #567797;
+}
+.container-contact table {
+    border-collapse: collapse;
+    border: solid;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 5px 11px #5e5e5e;
+    width: 98%;
+}
+.container-contact th, td {
+    padding: 15px;
+    border: rgb(110, 110, 110) solid;
+    border-collapse: collapse;
+    background-color: #e9e9e9;
+    font-size: 30px;
+}
+.container-contact th {
+    background-color: #567797;
+    color: whitesmoke;
+}
+#nombre {
+    background-color: #ffedbb;
+}
+#region {
+    background-color: #91abc5;
+}
+.nous-contacter p {
+    text-align: center;
+    font-size: 24px;
+}
+.nous-contacter a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* O R D I N A  T E U R */
+
+
+
+@media only screen and (min-width: 600px) {
+
+    div.entete {
+        position: relative;
+        height: 200px;
+        background: 
+        url(entraide.png) no-repeat,
+        url(fond_entete.jpg) no-repeat center/cover;
+        margin: auto;
+    }
+    div.entete img { 
+        display: block;
+        position: absolute;
+        max-width: 120px;
+        margin-left: 15px;
+        margin-top: -80px;
+    }
+    div.icon {
+        margin-top: 55px;
+        padding: 11px;
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    div.icon a {
+        font-size: 18px;
+        color: black;
+        border: solid 1px;
+        border-radius: 0px;
+        text-decoration: none;
+        text-align: center;
+        width: 24%;
+    }
+    div.icon a:hover {
+        color: aliceblue;
+    }
+    div.ecran {
+        position: relative;
+        height: 472px;   
+    }
+    
+    div.cont-ecran {
+        border: solid 2px; border-color: #87a4bc;
+        background-color: #87a4bc;
+        top: 0px;
+        width: 100%;
+        padding: 2px 10px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+    }
+    .cont-ecran .box {
+        position: relative;
+        width: 200px;
+        height: 330px;
+        background: #ffecce21;
+        padding: 100px 40px 40px;
+        border-radius: 0;
+        box-shadow: 0 5px 11px rgba(0,0,0,.5);
+    }
+
+    .cont-ecran .box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #28397522;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+    .cont-ecran .box:hover:before {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+    
+    .cont-ecran .box h2 {
+        position: absolute;
+        margin-top: 40px;
+        color: black;
+        left: 40px;
+        top: 50px;
+        font-size: 4em;
+        font-weight: 800;
+        z-index: 1;
+        opacity: 0.1;
+        transition: 0.5s;
+    }
+    .cont-ecran .box:hover h2 {
+        opacity: 0.3;
+        color: aliceblue;
+        transform: translateY(-70px);
+    }
+    .cont-ecran .box h3 {
+        position: relative;
+        font-size: 1.5em;
+        z-index: 2;
+        color: #333;
+        transition: 0.5s;
+    }
+    .cont-ecran .box p {
+        font-size: 12px;
+        position: relative;
+        text-align: justify;
+        z-index: 2;
+        color: #555;
+        transition: 0.5s;
+    }
+    .cont-ecran .box:hover h3 , .cont-ecran .box:hover p{
+        color: #fff;
+        transform: translateY(-20px);
+    }
+    .articles {
+        position: relative;
+        width: auto;
+    }
+    .article {
+        display: flex;
+        max-height: 450px;
+        width: auto;
+    }
+    
+    .left {
+        width: 50%;
+        height: 100%;
+    }
+    .left img {
+        padding: 7% 10%;
+        width: 85%;
+        object-fit: cover;
+    }
+    .right {
+        width: 50%;
+        height: 100%;
+    }
+    .right-container {
+        padding: 5% 0%;
+        padding-right: 21%;
+        width: 90%;
+    }
+    .right-container p {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .activites {
+        position: relative;
+        padding: 0% 5% 3%;
+        margin-top: 20px;
+    }
+    .activites h3 {
+        color: #113b72a2;
+        font-size: 20px;
+    }
+    .activites p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+
+    /*ACTIVITES ORDI */
+    div.hauteur {
+        height: 85px;
+        background: url(fond_entete.jpg) 
+        no-repeat center/cover;
+    }
+    .deux_entete img {
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .separateur {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        width: 25%;
+        height: 1px;
+    }
+    .deux_entete h4 {
+        color: #87a4bc;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .article-container {
+        display: grid;
+        margin: 3px 15px;
+        grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+        gap: 1rem;
+    }
+    .article-image {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .article-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+    .article-card {
+        background: #faf5ec;
+        border-radius: 20px;
+        text-align: left;
+        transition: 0.3s;
+    }
+    .article-card:hover {
+        box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+        zoom: 105%;
+        cursor: pointer;
+    }
+    .article-content {
+        padding: 1rem;
+    }
+    .article-content .card-category {
+        font-size: 130%;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        color: #6b89a7;
+        display: block;
+        text-decoration: none;
+    }
+    .article-content .card-title {
+        margin: 1rem 0;
+        font-size: 90%;
+        color: #22447b;
+    }
+    .article-content .card-excerpt {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: #6b82a7;
+        margin: 0;
+    }
+    .developpement p {
+        margin: 25px;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .developpement { 
+        border: solid 1px; 
+        border-radius: 15px; 
+        margin: 15px; 
+        color: #6b89a7;
+    }
+    .container-contact h2 {
+        text-align: center;
+        color: #567797;
+    }
+    .container-contact table {
+        border-collapse: collapse;
+        border: solid;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 2px 5px 11px #5e5e5e;
+        width: 80%;
+    }
+    .container-contact th, td {
+        padding: 15px;
+        border: rgb(110, 110, 110) solid;
+        border-collapse: collapse;
+        background-color: #e9e9e9;
+        font-size: large;
+    }
+    .container-contact th {
+        background-color: #567797;
+        color: whitesmoke;
+    }
+    #nombre {
+        background-color: #ffedbb;
+    }
+    #region {
+        background-color: #91abc5;
+    }
+    .nous-contacter p {
+        text-align: center;
+        font-size: 14px;
+    }
+    .nous-contacter a {
+        text-decoration: none;
+    }
+}
